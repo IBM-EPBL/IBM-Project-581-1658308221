@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skill and Job Recommender</title>
+        <link rel="stylesheet" href="./Chat.css">
+        <style>
+            body {
+		background: url(https://miro.medium.com/max/1200/1*qjuZnAsQiGFIuE_-X-wGPQ.jpeg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		text-align: center;
+                align-content: center;
+		     }
+            button{
+                background:linear-gradient(to left,blue,violet,lavender,purple,pink);
+                animation-name: example;
+
+                margin: auto;
+                text-align: center;
+                align-content: center;
+                height: 100px;
+                font-size:large;
+                font-weight: bolder;
+                font-family: Bodoni Mt;
+              }
+
+              h1
+              {
+              	align-content: center;
+              }
+        </style>
+    </head>
+    <body >
+        <h1 style="color:rgb(0, 0, 0);">SKILL AND JOB RECOMMENDER</h1>
+        <div></div>
+        <button><a href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Feu-gb.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-60a4788d-86e4-40e5-95f4-dd724593493e%3A%3Ade120437-51dd-45fe-a7a0-d608ed2d1994&integrationID=e09d67ae-aa79-412d-833c-788f9605d555&region=eu-gb&serviceInstanceID=60a4788d-86e4-40e5-95f4-dd724593493e">Chat Bot Service</a></button>
+        <!-- Embed-->
+        <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "e09d67ae-aa79-412d-833c-788f9605d555", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "60a4788d-86e4-40e5-95f4-dd724593493e", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
+
+    </body>
+</html>
